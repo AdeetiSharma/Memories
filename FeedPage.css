@@ -1,0 +1,87 @@
+/* Feed Page Styling */
+
+/* Navbar styling */
+.feed-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .feed-logo {
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .feed-search {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .notification-icon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  /* Posts Grid */
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .post-card {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .post-info {
+    text-align: left;
+    padding: 10px 0;
+  }
+  
+  .post-info h4 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .post-info p {
+    margin: 0;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .feed-navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .feed-search {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+  .bell-icon {
+    font-size: 24px;   /* Adjust size */
+    color: #edeaea;       /* Adjust color */
+    cursor: pointer;
+  }

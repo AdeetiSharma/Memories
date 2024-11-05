@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Home Page Styling */
+.home-page {
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('/public/hero.webp');
+  background-size: cover;
+  padding: 100px 20px;
+  color: #fff;
+  height: 60vh;
+}
+
+.get-in-touch-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffcc00;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Features Section (Why Memories?) */
+/* Features Section (Why Memories?) */
+.features-section {
+  padding: 50px 20px;
+  background-color: #222;
+  height: 200px; /* Increase height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.features-section h2{
+  color: white;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 50px 20px;
+  background-color: #222; /* Dark background */
+  color: #fff;
+}
+
+.slider-container {
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: hidden; /* Hide the overflow content */
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+}
+
+.testimonial-card {
+  flex: 0 0 300px; /* Each card takes up a fixed width */
+  border: 1px solid #444;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #444; /* Same gray color as before */
+  color: #fff;
+}
+
+/* Slider Animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-300px); /* Slide to the next card */
+  }
+  66% {
+    transform: translateX(-600px); /* Slide to the third card */
+  }
+  100% {
+    transform: translateX(0); /* Back to the first card */
+  }
+}
+
+.slider {
+  animation: slide 10s infinite; /* Infinite auto-slide */
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}

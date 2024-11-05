@@ -1,0 +1,12 @@
+.blur-background {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.pexels.com/photos/18641196/pexels-photo-18641196/free-photo-of-a-blue-butterfly-sitting-on-a-yellow-flower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
+    backdrop-filter: blur(10px);
+  }
+
+
+  
+  
